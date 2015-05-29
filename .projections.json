@@ -1,0 +1,102 @@
+{
+  "app/adapters/*.js": {
+    "command": "adapter",
+    "template": [
+      "import ApplicationAdapter from './application';",
+      "", 
+      "export default ApplicationAdapter.extend({",
+      "});",
+    ]   
+  },  
+
+  "app/components/*.js": {
+    "command": "component",
+    "template": [
+      "import Ember from 'ember';",
+      "", 
+      "export default Ember.Component.extend({",
+      "});",
+    ]   
+  },  
+
+  "app/controllers/*.js": {
+    "command": "controller",
+    "template": [
+      "import Ember from 'ember';",
+      "", 
+      "export default Ember.Controller.extend({",
+      "", 
+      "});",
+    ]   
+  },  
+
+  "app/helpers/*.js": {
+    "command": "helper",
+    "template": [
+      "import Ember from 'ember';",
+      "", 
+      "export function testing(params/*, hash*/) {",
+      "  return params;",
+      "}",
+      "", 
+      "export default Ember.HTMLBars.makeBoundHelper(testing);",
+    ]   
+  },  
+
+  "app/models/*.js": {
+    "command": "model",
+    "template": [
+      "import DS from 'ember-data';",
+      "export default DS.Model.extend({",
+      "", 
+      "});",
+    ]   
+  },  
+
+  "app/router.js": {
+    "command": "router"
+  },  
+
+  "app/routes/*.js": {
+    "command": "route",
+    "template": [
+      "import Ember from 'ember';",
+      "export default Ember.Route.extend({",
+      "", 
+      "});",
+    ]   
+
+  },  
+
+  "app/styles/*.css": {
+    "command": "style",
+    "template": [
+      "/* {}.css */",
+      "", 
+    ]   
+  },  
+
+  "app/templates/*.hbs": {
+    "command": "template"
+  },  
+
+  "app/utils/*.js": {
+    "command": "util",
+    "template": [
+      "export default function {}() {",
+      "  return true;",
+      "}",
+    ]   
+  },  
+
+  "app/views/*.js": {
+    "command": "view",
+    "template": [
+      "import Ember from 'ember';",
+      "", 
+      "export default Ember.View.extend({",
+      "", 
+      "});",
+    ]   
+  },  
+}
