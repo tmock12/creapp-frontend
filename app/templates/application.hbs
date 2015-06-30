@@ -1,6 +1,9 @@
-<h2 id="title">Welcome to Ember.js</h2>
-
-{{outlet}}
-
-{{!-- ember-cli-materialize modal container --}}
+<nav class="light-blue" role="navigation">
+  <div class="nav-wrapper container">
+    {{link-to "CREapp" "application" class="brand-logo"}}
+  </div>
+</nav>
+<div class="container">
+  {{outlet}}
+</div>
 {{md-modal-container}}

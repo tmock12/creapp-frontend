@@ -6,3 +6,11 @@
     content: "\""+ $mdi-icon-value +"\"";
   }
 }
+
+.input-field {
+  margin: 0 0 15px 0;
+
+  input[type='email'], input[type='text'], input[type='password'] {
+    margin: 0
+  }
+}
