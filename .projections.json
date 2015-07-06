@@ -88,15 +88,4 @@
       "}",
     ]   
   },  
-
-  "app/views/*.js": {
-    "command": "view",
-    "template": [
-      "import Ember from 'ember';",
-      "", 
-      "export default Ember.View.extend({",
-      "", 
-      "});",
-    ]   
-  },  
 }
