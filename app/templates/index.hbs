@@ -3,3 +3,8 @@
 <div class="row center">
   {{link-to "Get Started" "registration.index" class="btn-large light-blue"}}
 </div>
+{{#unless session.isAuthenticated}}
+  <div class="row center">
+    {{link-to "Sign In" "sessions.new" }}
+  </div>
+{{/unless}}

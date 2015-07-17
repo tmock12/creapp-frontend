@@ -1,0 +1,15 @@
+<div class="row">
+  <div class="col s6 offset-s3">
+    <h3>Sign In:</h3>
+  </div>
+</div>
+<div class="row">
+  {{#if signInError}}
+    <p class="col s6 offset-s3 red-text center">Incorrect email or password</p>
+  {{/if}}
+  <form class="col s6 offset-s3" {{action "signInUser" on="submit"}}>
+    {{md-input value=emailValue label="Email" type='email' errors=signInError}}
+    {{md-input value=passwordValue label="Password" type="password" errors=signInError}}
+    {{md-btn-submit text='Sign In' class="center light-blue"}}
+  </form>
+</div>

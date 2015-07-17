@@ -1,6 +1,13 @@
 <nav class="light-blue" role="navigation">
   <div class="nav-wrapper container">
     {{link-to "CREapp" "application" class="brand-logo"}}
+    {{#if session.isAuthenticated}}
+      <ul class="right">
+        <li>
+          <a {{ action 'invalidateSession' }}>Logout</a>
+        </li>
+      </ul>
+    {{/ if }}
   </div>
 </nav>
 <div class="container">

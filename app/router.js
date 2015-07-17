@@ -9,6 +9,7 @@ Router.map(function() {
   this.route('registration', {path: '/sign-up'}, function() {
     this.route('thanks');
   });
+  this.route('sessions.new', {path: '/sign-in'});
 });
 
 export default Router;
