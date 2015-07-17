@@ -5,12 +5,12 @@ export default function() {
   this.post('/api/v1/registrations', function(db, request) {
     var registrationJSON = JSON.parse(request.requestBody).registration;
 
-    return  {
+    return new Mirage( 201, {
       registration: {
         user: db.users.insert(registrationJSON.user),
         company: db.companies.insert(registrationJSON.company)
       }
-    };
+    });
   });
 
   this.post('/api/v1/sessions', function(db, request) {
